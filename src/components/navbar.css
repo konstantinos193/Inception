@@ -1,0 +1,143 @@
+.navbar {
+    background-color: #1a1a1a; /* Dark background color */
+    padding: 1rem; /* Padding for the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the navbar is full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.navbar-logo {
+    height: 3rem; /* Increase height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 0.5rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1rem; /* Adjust padding to match button box */
+    border-radius: 0.25rem;
+    height: 48px; /* Set the height to 48px */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.navbar-search input {
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 150px; /* Adjust width as needed */
+    height: 100%; /* Match the height of the search bar container */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.navbar-search input::placeholder {
+    color: #555;
+}
+
+.navbar-search-icon {
+    color: #ccc;
+    margin-left: 0.5rem;
+    height: 100%; /* Match the height of the search bar container */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Box background color */
+    border-radius: 0.25rem; /* Add border-radius for rounded corners */
+    height: 48px; /* Match the height of the search bar */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 0; /* No gap between items */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Ensure the links container takes up the full height */
+}
+
+.navbar-links li {
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove padding from li */
+    border-left: 1px solid #444; /* Add left border to separate items */
+    height: 100%; /* Ensure the list items take up the full height */
+}
+
+.navbar-links li:first-child {
+    border-left: none; /* Remove left border for the first item */
+}
+
+.navbar-links a {
+    display: flex; /* Make the link take up the full height and width of the parent li */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s; /* Add transition for color and background-color */
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    height: 100%; /* Ensure the link takes up the full height of the parent li */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.navbar-links a:hover {
+    color: #fff;
+    background-color: #ff9900; /* Bitcoin orange color */
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center; /* Ensure icons are vertically centered */
+    gap: 0; /* No gap between items */
+    color: #ccc;
+    cursor: pointer;
+    height: 48px; /* Match the height of the search bar */
+}
+
+.navbar-icons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Match the height of the search bar */
+    width: 48px; /* Match the width of the search bar */
+    transition: color 0.3s, background-color 0.3s; /* Add transition for color and background-color */
+}
+
+.navbar-icons div:hover {
+    color: #fff;
+    background-color: #ff9900; /* Bitcoin orange color */
+}
+
+.navbar-icons svg {
+    height: 24px; /* Adjust the height to match the buttons */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-xlogo {
+    height: 24px; /* Adjust the height to match the buttons */
+    width: auto; /* Maintain aspect ratio */
+    transition: filter 0.3s; /* Add transition for filter */
+}
+
+.navbar-icons div:hover .navbar-xlogo {
+    filter: brightness(1.2); /* Add a hover effect */
+}

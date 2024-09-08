@@ -8,6 +8,10 @@ const Navbar = () => {
         window.open('https://discord.gg/gKZE3dsH', '_blank', 'noopener,noreferrer');
     };
 
+    const handleTwitterClick = () => {
+        window.open('https://x.com/launchdreams', '_blank', 'noopener,noreferrer'); // Add Twitter URL
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-brand">
@@ -42,7 +46,7 @@ const Navbar = () => {
                         <div className="navbar-icon" onClick={handleDiscordClick}>
                             <FaDiscord />
                         </div>
-                        <div className="navbar-icon">
+                        <div className="navbar-icon" onClick={handleTwitterClick}> {/* Add onClick handler */}
                             <img src={xLogo} alt="X Logo" className="navbar-xlogo" /> {/* Replace FaTimes with X logo */}
                         </div>
                     </div>

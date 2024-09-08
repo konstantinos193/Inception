@@ -34,11 +34,9 @@ const Navbar = () => {
                             <a href="#create">CREATE</a>
                         </li>
                         <li>
-                            <a href="#blog">BLOG</a>
+                            <a href="#dreams">DREAMS</a> {/* Replace BLOG with DREAMS */}
                         </li>
-                        <li>
-                            <a href="#docs">DOCS</a>
-                        </li>
+                        {/* Remove DOCS button */}
                     </ul>
                     <div className="navbar-icons">
                         <div className="navbar-icon" onClick={handleDiscordClick}>

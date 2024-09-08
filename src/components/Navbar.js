@@ -12,7 +12,6 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-brand">
                 <img src={`${process.env.PUBLIC_URL}/images/Logo.png`} alt="Logo" className="navbar-logo" />
-                <span className="text-white text-2xl font-bold">SCATTER</span>
             </div>
             <div className="navbar-content">
                 <div className="navbar-search">

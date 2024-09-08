@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Inception/static/css/main.92c8d4eb.css",
-    "main.js": "/Inception/static/js/main.d2e2a779.js",
+    "main.css": "/Inception/static/css/main.edbcf97d.css",
+    "main.js": "/Inception/static/js/main.1125b84e.js",
+    "static/media/xlogo.png": "/Inception/static/media/xlogo.6d951d7a888d4c86c160.png",
     "index.html": "/Inception/index.html",
-    "main.92c8d4eb.css.map": "/Inception/static/css/main.92c8d4eb.css.map",
-    "main.d2e2a779.js.map": "/Inception/static/js/main.d2e2a779.js.map"
+    "main.edbcf97d.css.map": "/Inception/static/css/main.edbcf97d.css.map",
+    "main.1125b84e.js.map": "/Inception/static/js/main.1125b84e.js.map"
   },
   "entrypoints": [
-    "static/css/main.92c8d4eb.css",
-    "static/js/main.d2e2a779.js"
+    "static/css/main.edbcf97d.css",
+    "static/js/main.1125b84e.js"
   ]
 }

@@ -1,0 +1,32 @@
+.dreams-container {
+    padding: 20px;
+}
+
+.dream-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dream-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.dream-item:hover {
+    transform: scale(1.05);
+}
+
+.dream-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dream-item p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}

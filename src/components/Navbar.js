@@ -38,7 +38,7 @@ const Navbar = () => {
                             <a href="#create">CREATE</a>
                         </li>
                         <li>
-                            <a href="#dreams">DREAMS</a> {/* Replace BLOG with DREAMS */}
+                            <a href="/dreams">DREAMS</a> {/* Update the href to point to the Dreams page */}
                         </li>
                         {/* Remove DOCS button */}
                     </ul>

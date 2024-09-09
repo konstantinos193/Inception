@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/Inception/static/css/main.e3e80e0e.css",
-    "main.js": "/Inception/static/js/main.3f37e9f4.js",
+    "main.css": "/Inception/static/css/main.16a08485.css",
+    "main.js": "/Inception/static/js/main.e1ee67ac.js",
     "static/media/xlogo.png": "/Inception/static/media/xlogo.6d951d7a888d4c86c160.png",
+    "static/media/slick.svg": "/Inception/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Inception/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Inception/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Inception/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Inception/index.html",
-    "main.e3e80e0e.css.map": "/Inception/static/css/main.e3e80e0e.css.map",
-    "main.3f37e9f4.js.map": "/Inception/static/js/main.3f37e9f4.js.map"
+    "main.16a08485.css.map": "/Inception/static/css/main.16a08485.css.map",
+    "main.e1ee67ac.js.map": "/Inception/static/js/main.e1ee67ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3e80e0e.css",
-    "static/js/main.3f37e9f4.js"
+    "static/css/main.16a08485.css",
+    "static/js/main.e1ee67ac.js"
   ]
 }

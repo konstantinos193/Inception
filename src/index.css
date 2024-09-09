@@ -1,112 +1,149 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Dark background color to match navbar */
-    color: #ccc; /* Light text color to match navbar */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  h1, h2 {
-    color: #ff9900; /* Ordinals Orange */
-  }
-  
-  .section-title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #ff9900; /* Ordinals Orange */
-  }
-  
-  /* Featured Projects Section */
-  .featured-projects {
-    padding: 40px 20px; /* Ensure there's space around the section */
-    margin-top: 20px;   /* Add margin at the top for separation */
-    background-color: #333; /* Dark background color to match navbar */
-    border-radius: 8px; /* Add border-radius for rounded corners */
-  }
-  
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #ff9900;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #ff9900;
+}
+
+/* Featured Project Section */
+.featured-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #333, #1a1a1a);
+  color: #eee;
+  text-align: center;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.project-frame {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  border: 8px solid #ff6f00;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Project Carousel Section */
+.project-carousel {
+  padding: 40px;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+.carousel-card {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.carousel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Project Cards */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  border: 1px solid #ff9900;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  color: #ccc;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Button Styles */
+.cta-button, .view-more {
+  background: linear-gradient(90deg, #ff9900, #ff6f00);
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover, .view-more:hover {
+  background: linear-gradient(90deg, #ff6f00, #e65c00);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .project-card {
-    border: 1px solid #ff9900; /* Ordinals Orange */
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #1a1a1a; /* Dark background color to match navbar */
-    border-radius: 8px;
-    color: #ccc; /* Light text color to match navbar */
-  }
-  
-  .project-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-  
-  .view-more {
-    background-color: #ff9900; /* Ordinals Orange */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .view-more:hover {
-    background-color: #e65c00;
-    transform: scale(1.05);
-  }
-  
-  /* Slider Section */
-  .project-slider {
-    padding: 40px;
-    background-color: #333; /* Dark background color to match navbar */
-    border-radius: 8px; /* Add border-radius for rounded corners */
-  }
-  
-  .slider-card {
-    text-align: center;
-    color: #ccc; /* Light text color to match navbar */
-  }
-  
-  .slick-prev, .slick-next {
-    color: #ff9900 !important; /* Ordinals Orange */
-  }
-  
-  .slick-dots li button:before {
-    color: #ff9900; /* Ordinals Orange */
-  }
-  
-  /* Header and Footer */
-  .main-footer {
-    background-color: #1a1a1a; /* Dark background color to match navbar */
-    color: #ccc; /* Light text color to match navbar */
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .project-grid {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .project-card {
+  }
+
+  .project-card {
       max-width: 100%;
       margin-bottom: 20px;
-    }
   }
+
+  .cta-button, .view-more {
+    width: 100%;
+  }
+
+  .carousel-card {
+    padding: 5px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import FeaturedProject from '../components/FeaturedProject';
 import ProjectCarousel from '../components/ProjectCarousel';
-import FeaturedProjects from '../components/FeaturedProjects';
 
 function HomePage() {
   // Initial placeholder data for projects
@@ -55,7 +54,6 @@ function HomePage() {
     <div className="homepage">
       <FeaturedProject project={featuredProject} />
       <ProjectCarousel projects={projects} onProjectClick={handleProjectClick} />
-      <FeaturedProjects />
     </div>
   );
 }

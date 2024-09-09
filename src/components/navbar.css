@@ -141,3 +141,23 @@
 .navbar-icons div:hover .navbar-xlogo {
     filter: brightness(1.2); /* Add a hover effect */
 }
+
+.connect-wallet-button {
+    display: flex; /* Make the button take up the full height and width of the parent div */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    background-color: #ff9900; /* Bitcoin orange color */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for color and background-color */
+    height: 100%; /* Ensure the button takes up the full height of the parent div */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.connect-wallet-button:hover {
+    background-color: #e68a00; /* Darker shade of Bitcoin orange */
+    color: #fff;
+}

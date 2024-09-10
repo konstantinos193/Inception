@@ -1,32 +1,85 @@
 .dreams-container {
-    padding: 20px;
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #e94560; /* Pinkish-red text color */
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #16213e; /* Darker blue for contrast */
+}
+
+.dreams-title {
+    text-align: center;
+    margin-top: -40px; /* Adjust this value to move the title higher */
+    margin-bottom: 30px; /* Add some space between the title and the grid */
+    font-size: 2.5em; /* Adjust the font size as needed */
 }
 
 .dream-collage {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 1rem;
 }
 
 .dream-item {
-    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f3460; /* Slightly lighter blue for cards */
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .dream-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
-.dream-item img {
+.image-placeholder {
     width: 100%;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.dream-item p {
-    padding: 10px;
+.image-placeholder label {
+    color: #e94560; /* Pinkish-red text color */
+    font-size: 0.9rem;
+}
+
+.dream-title-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #333;
+    color: #eee;
+    border-radius: 4px;
+    font-size: 1rem;
     text-align: center;
-    font-weight: bold;
+}
+
+.dream-title-input::placeholder {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
